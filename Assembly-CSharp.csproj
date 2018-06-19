@@ -55,6 +55,22 @@
      <Compile Include="Assets\Joystick\Scripts\Joysticks\FixedJoystick.cs" />
      <Compile Include="Assets\Joystick\Scripts\Joysticks\FloatingJoystick.cs" />
      <Compile Include="Assets\Joystick\Scripts\Joysticks\VariableJoystick.cs" />
+     <Compile Include="Assets\Lobby\Scripts\DraggablePanel.cs" />
+     <Compile Include="Assets\Lobby\Scripts\Lobby\LobbyCountdownPanel.cs" />
+     <Compile Include="Assets\Lobby\Scripts\Lobby\LobbyHook.cs" />
+     <Compile Include="Assets\Lobby\Scripts\Lobby\LobbyInfoPanel.cs" />
+     <Compile Include="Assets\Lobby\Scripts\Lobby\LobbyMainMenu.cs" />
+     <Compile Include="Assets\Lobby\Scripts\Lobby\LobbyManager.cs" />
+     <Compile Include="Assets\Lobby\Scripts\Lobby\LobbyPlayer.cs" />
+     <Compile Include="Assets\Lobby\Scripts\Lobby\LobbyPlayerList.cs" />
+     <Compile Include="Assets\Lobby\Scripts\Lobby\LobbyServerEntry.cs" />
+     <Compile Include="Assets\Lobby\Scripts\Lobby\LobbyServerList.cs" />
+     <Compile Include="Assets\Lobby\Scripts\Lobby\LobbyTopPanel.cs" />
+     <Compile Include="Assets\Prefabs\Billboard.cs" />
+     <Compile Include="Assets\Prefabs\Bullet.cs" />
+     <Compile Include="Assets\Prefabs\EnemySpawner.cs" />
+     <Compile Include="Assets\Prefabs\Health.cs" />
+     <Compile Include="Assets\Prefabs\PlayerController2.cs" />
      <Compile Include="Assets\Scripts\FixedButton.cs" />
      <Compile Include="Assets\Scripts\FixedTouchField.cs" />
      <Compile Include="Assets\Scripts\MainMenu.cs" />
@@ -65,18 +81,21 @@
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Surface.cginc" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF.shader" />
+     <None Include="Assets\Lobby\Documentation.txt" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
+     <None Include="Assets\Lobby\Instruction.txt" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Masking.shader" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
+     <None Include="Assets\Fonts\OpenSans\License!.txt" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile.shader" />
      <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
-     <None Include="Assets\_Creepy_Cat\3D Games Effects Pack Free\_FAQ - Informations\Help Readme SOS.txt" />
+     <None Include="Assets\3D Games Effects Pack Free\_FAQ - Informations\Help Readme SOS.txt" />
  <Reference Include="Facebook.Unity.Settings">
  <HintPath>/Users/carlosemilianocastrotrejo/Desktop/Kill For the Wi-Fi/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
  </Reference>

@@ -60,3 +60,5 @@
 /Users/carlosemilianocastrotrejo/Desktop/Kill For the Wi-Fi/Temp/bin/Debug/UnityEditor.iOS.Extensions.Xcode.xml
 /Users/carlosemilianocastrotrejo/Desktop/Kill For the Wi-Fi/Temp/bin/Debug/UnityEditor.iOS.Extensions.Common.dll
 /Users/carlosemilianocastrotrejo/Desktop/Kill For the Wi-Fi/Temp/bin/Debug/UnityEditor.iOS.Extensions.Common.dll.mdb
+/Users/carlosemilianocastrotrejo/Desktop/Kill For the Wi-Fi/Temp/bin/Debug/Assembly-CSharp-firstpass.dll
+/Users/carlosemilianocastrotrejo/Desktop/Kill For the Wi-Fi/Temp/bin/Debug/Assembly-CSharp-firstpass.dll.mdb
