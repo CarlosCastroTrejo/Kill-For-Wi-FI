@@ -25,7 +25,7 @@ GameObject:
   - component: {fileID: 54677920835848598}
   - component: {fileID: 114124666267261272}
   - component: {fileID: 114763258061187696}
-  - component: {fileID: 114471268132494272}
+  - component: {fileID: 114036754268954376}
   m_Layer: 0
   m_Name: Bullet
   m_TagString: Untagged
@@ -102,6 +102,17 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &114036754268954376
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1980065441924018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffa4dcfcb222d46eda1f7f3f31d9237c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114124666267261272
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -116,35 +127,24 @@ MonoBehaviour:
   m_SceneId:
     m_Value: 0
   m_AssetId:
-    i0: 12
-    i1: 191
-    i2: 129
-    i3: 210
-    i4: 202
-    i5: 230
-    i6: 84
-    i7: 73
-    i8: 107
-    i9: 241
-    i10: 1
-    i11: 46
-    i12: 20
-    i13: 69
-    i14: 225
-    i15: 86
+    i0: 195
+    i1: 212
+    i2: 225
+    i3: 41
+    i4: 21
+    i5: 94
+    i6: 148
+    i7: 139
+    i8: 249
+    i9: 63
+    i10: 127
+    i11: 222
+    i12: 122
+    i13: 193
+    i14: 26
+    i15: 229
   m_ServerOnly: 0
   m_LocalPlayerAuthority: 0
---- !u!114 &114471268132494272
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1980065441924018}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ab4f4db75add4ee5a74036a8582535b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114763258061187696
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -34,39 +34,35 @@ public class Robot : NetworkBehaviour {
 	// Update is called once per frame
 	void Update () 
 	{
-		if (!isLocalPlayer) 
+		if (isLocalPlayer) {
+
+			var fps = GetComponent<RigidbodyFirstPersonController> ();
+
+			fps.RunAxis = MoveJoystick.inputVector; 
+			fps.JumpAxis = JumpButton.Pressed; 
+			fps.mouseLook.LookAxis = TouchField.TouchDist;
+
+
+
+
+
+			if ((int)(fps.RunAxis.x * 100) >= -5 && (int)(fps.RunAxis.x * 100) <= 5 && (int)(fps.RunAxis.y * 100) > 90) {
+				animation.Play ("walk_shoot_ar", -1, 0f);
+			} else if ((int)(fps.RunAxis.x * 100) >= -5 && (int)(fps.RunAxis.x * 100) <= 5 && (int)(fps.RunAxis.y * 100) < -90) {
+				animation.Play ("walkBack_shoot_ar", -1, 0f);
+			} else if ((int)(fps.RunAxis.y * 100) >= -5 && (int)(fps.RunAxis.y * 100) <= 5 && (int)(fps.RunAxis.x * 100) > 90) {
+				animation.Play ("walkRight_shoot_ar", -1, 0f);
+			} else if ((int)(fps.RunAxis.y * 100) >= -5 && (int)(fps.RunAxis.y * 100) <= 5 && (int)(fps.RunAxis.x * 100) < -90) {
+				animation.Play ("walkLeft_shoot_ar", -1, 0f);
+			} else if (ShootButton.Pressed) {
+				animation.Play ("shoot_single_ar", -1, 0f);
+				CmdFire ();
+			}
+		} else 
 		{
 			return;
 		}
-		var fps = GetComponent<RigidbodyFirstPersonController> ();
 
-		fps.RunAxis = MoveJoystick.inputVector; 
-		fps.JumpAxis = JumpButton.Pressed; 
-		fps.mouseLook.LookAxis = TouchField.TouchDist;
-
-
-
-
-
-		if ((int)(fps.RunAxis.x*100)>=-5 && (int)(fps.RunAxis.x*100)<=5 && (int)(fps.RunAxis.y*100)>90) 
-		{
-			animation.Play ("walk_shoot_ar", -1, 0f);
-		} else if ((int)(fps.RunAxis.x*100)>=-5 && (int)(fps.RunAxis.x*100)<=5 && (int)(fps.RunAxis.y*100)<-90) 
-		{
-			animation.Play ("walkBack_shoot_ar", -1, 0f);
-		}else if ((int)(fps.RunAxis.y*100)>=-5 && (int)(fps.RunAxis.y*100)<=5 && (int)(fps.RunAxis.x*100)>90) 
-		{
-			animation.Play ("walkRight_shoot_ar", -1, 0f);
-		}else  if ((int)(fps.RunAxis.y*100) >=-5 && (int)(fps.RunAxis.y*100)<=5 && (int)(fps.RunAxis.x*100)<-90) 
-		{
-			animation.Play ("walkLeft_shoot_ar", -1, 0f);
-		}else if (ShootButton.Pressed) 
-		{
-			animation.Play ("shoot_single_ar", -1, 0f);
-			CmdFire ();
-		}
-
-		print ((int)(fps.RunAxis.x*100));
 
 	}
 

@@ -51,6 +51,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Car Script basic\Script\Dot_Truck_Controller.cs" />
      <Compile Include="Assets\Joystick\Scripts\Base\Joystick.cs" />
      <Compile Include="Assets\Joystick\Scripts\Joysticks\FixedJoystick.cs" />
      <Compile Include="Assets\Joystick\Scripts\Joysticks\FloatingJoystick.cs" />
@@ -66,15 +67,16 @@
      <Compile Include="Assets\Lobby\Scripts\Lobby\LobbyServerEntry.cs" />
      <Compile Include="Assets\Lobby\Scripts\Lobby\LobbyServerList.cs" />
      <Compile Include="Assets\Lobby\Scripts\Lobby\LobbyTopPanel.cs" />
-     <Compile Include="Assets\Prefabs\Billboard.cs" />
-     <Compile Include="Assets\Prefabs\Bullet.cs" />
-     <Compile Include="Assets\Prefabs\EnemySpawner.cs" />
-     <Compile Include="Assets\Prefabs\Health.cs" />
-     <Compile Include="Assets\Prefabs\PlayerController2.cs" />
+     <Compile Include="Assets\Scripts\Billboard.cs" />
+     <Compile Include="Assets\Scripts\Bullet.cs" />
+     <Compile Include="Assets\Scripts\EnemySpawner.cs" />
      <Compile Include="Assets\Scripts\FixedButton.cs" />
      <Compile Include="Assets\Scripts\FixedTouchField.cs" />
+     <Compile Include="Assets\Scripts\Health.cs" />
      <Compile Include="Assets\Scripts\MainMenu.cs" />
      <Compile Include="Assets\Scripts\MyScript.cs" />
+     <Compile Include="Assets\Scripts\PlayerContoller2.cs" />
+     <Compile Include="Assets\Scripts\PlayerController3.cs" />
      <Compile Include="Assets\Scripts\Robot.cs" />
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Mobile.shader" />
