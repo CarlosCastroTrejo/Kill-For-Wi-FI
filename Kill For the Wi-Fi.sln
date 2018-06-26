@@ -1,11 +1,13 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio for Mac
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kill For the Wi-Fi", "Assembly-CSharp.csproj", "{7572D5BE-F0A8-ED0A-0E13-22CBF0419C7D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kill For the Wi-Fi", "Assembly-CSharp-firstpass.csproj", "{3707FEB4-F3A1-7E77-49B0-0DD5C17273E2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kill For the Wi-Fi", "Assembly-CSharp-Editor-firstpass.csproj", "{D4F6C3B1-9DE3-BB9E-7287-3B81B2A72EB0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kill For the Wi-Fi", "Assembly-CSharp-Editor.csproj", "{79A59A1C-7135-9001-F234-8950FD1F3FD3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,11 +27,12 @@ Global
 		{D4F6C3B1-9DE3-BB9E-7287-3B81B2A72EB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D4F6C3B1-9DE3-BB9E-7287-3B81B2A72EB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D4F6C3B1-9DE3-BB9E-7287-3B81B2A72EB0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79A59A1C-7135-9001-F234-8950FD1F3FD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79A59A1C-7135-9001-F234-8950FD1F3FD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79A59A1C-7135-9001-F234-8950FD1F3FD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79A59A1C-7135-9001-F234-8950FD1F3FD3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = Assembly-CSharp.csproj
 	EndGlobalSection
 EndGlobal

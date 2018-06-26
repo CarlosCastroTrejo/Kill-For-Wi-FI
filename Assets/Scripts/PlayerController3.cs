@@ -23,15 +23,14 @@ public class PlayerController3 : NetworkBehaviour
 		if (!isLocalPlayer) 
 		{
 			return;
-		}	
-		/*var fps = GetComponent<RigidbodyFirstPersonController> ();
+		}
+        /*var fps = GetComponent<RigidbodyFirstPersonController> ();
 
 		fps.RunAxis = MoveJoystick.inputVector; 
 		fps.JumpAxis = JumpButton.Pressed; 
 		fps.mouseLook.LookAxis = TouchField.TouchDist;*/
 
-		transform.Translate (MoveJoystick.inputVector.x*.2f,0,MoveJoystick.inputVector.y*.2f);
-
+        transform.Translate(MoveJoystick.inputVector.x, 0, MoveJoystick.inputVector.y);
 			
 		if (ShootButton.Pressed) 
 		{
