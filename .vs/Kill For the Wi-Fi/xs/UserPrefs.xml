@@ -1,9 +1,9 @@
 ﻿<Properties StartupConfiguration="{7572D5BE-F0A8-ED0A-0E13-22CBF0419C7D}|">
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Car Script basic/Script/Dot_Truck_Controller.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PlayerController3.cs">
     <Files>
-      <File FileName="Assets/Scripts/PlayerController3.cs" Line="13" Column="2" />
-      <File FileName="Assets/Car Script basic/Script/Dot_Truck_Controller.cs" Line="24" Column="50" />
+      <File FileName="Assets/Car Script basic/Script/Dot_Truck_Controller.cs" Line="47" Column="31" />
+      <File FileName="Assets/Scripts/PlayerController3.cs" Line="14" Column="32" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

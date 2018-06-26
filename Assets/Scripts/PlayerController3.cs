@@ -30,8 +30,8 @@ public class PlayerController3 : NetworkBehaviour
 		fps.JumpAxis = JumpButton.Pressed; 
 		fps.mouseLook.LookAxis = TouchField.TouchDist;*/
 
-        transform.Translate (0,0,MoveJoystick.inputVector.y*.2f);
-        transform.Rotate(0, TouchField.TouchDist.x*.2f, 0);
+        transform.Translate (MoveJoystick.inputVector.y * .2f,0,MoveJoystick.inputVector.y*.2f);
+       // transform.Rotate(0, TouchField.TouchDist.x*.2f, 0);
 
 			
 		if (ShootButton.Pressed) 
