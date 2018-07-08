@@ -1,10 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.Networking;
 
 public class Billboard : MonoBehaviour
 {
-
-	void Update () {
-		transform.LookAt(Camera.main.transform);
+	public Camera cam;
+	void Update () 
+	{
+		transform.LookAt(cam.transform);
 	}
 }
