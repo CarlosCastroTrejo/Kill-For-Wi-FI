@@ -1129,6 +1129,26 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 114323640785065632, guid: adc4ba6d5901a4177888e532c4594ff6,
+        type: 2}
+      propertyPath: m_havePropertiesChanged
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114323640785065632, guid: adc4ba6d5901a4177888e532c4594ff6,
+        type: 2}
+      propertyPath: m_isInputParsingRequired
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114273214123684264, guid: adc4ba6d5901a4177888e532c4594ff6,
+        type: 2}
+      propertyPath: m_havePropertiesChanged
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114273214123684264, guid: adc4ba6d5901a4177888e532c4594ff6,
+        type: 2}
+      propertyPath: m_isInputParsingRequired
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1697033711908954, guid: adc4ba6d5901a4177888e532c4594ff6, type: 2}
       propertyPath: m_IsActive
       value: 0

@@ -36,7 +36,7 @@ public class PlayerController3 : NetworkBehaviour
 			return;
         } 
         //Move all the Object
-		transform.Translate(MoveJoystick.inputVector.x * .2f, 0, MoveJoystick.inputVector.y * .2f);
+		transform.Translate(MoveJoystick.inputVector.x * .4f, 0, MoveJoystick.inputVector.y * .4f);
 		transform.Rotate(0,TouchField.TouchDist.x * .08f,0);
 	
         //Move the wheels in a vertical way
