@@ -146,22 +146,22 @@
  <HintPath>/Users/carlosemilianocastrotrejo/Desktop/Kill For the Wi-Fi/Assets/TextMesh Pro/Plugins/Editor DLL/TextMeshPro-2017.3-Runtime.dll</HintPath>
  </Reference>
  <Reference Include="ProBuilderMeshOps-Unity5">
- <HintPath>/Users/carlosemilianocastrotrejo/Desktop/Kill For the Wi-Fi/Assets/ProCore/ProBuilder/Classes/ProBuilderMeshOps-Unity5.dll</HintPath>
+ <HintPath>/Users/carlosemilianocastrotrejo/Desktop/Kill For the Wi-Fi/Assets/ProBuilder/Classes/ProBuilderMeshOps-Unity5.dll</HintPath>
  </Reference>
  <Reference Include="ProBuilderCore-Unity5">
- <HintPath>/Users/carlosemilianocastrotrejo/Desktop/Kill For the Wi-Fi/Assets/ProCore/ProBuilder/Classes/ProBuilderCore-Unity5.dll</HintPath>
+ <HintPath>/Users/carlosemilianocastrotrejo/Desktop/Kill For the Wi-Fi/Assets/ProBuilder/Classes/ProBuilderCore-Unity5.dll</HintPath>
  </Reference>
  <Reference Include="pb_Stl">
- <HintPath>/Users/carlosemilianocastrotrejo/Desktop/Kill For the Wi-Fi/Assets/ProCore/ProBuilder/Classes/ClassesLib/pb_Stl.dll</HintPath>
+ <HintPath>/Users/carlosemilianocastrotrejo/Desktop/Kill For the Wi-Fi/Assets/ProBuilder/Classes/ClassesLib/pb_Stl.dll</HintPath>
  </Reference>
  <Reference Include="KdTreeLib">
- <HintPath>/Users/carlosemilianocastrotrejo/Desktop/Kill For the Wi-Fi/Assets/ProCore/ProBuilder/Classes/ClassesLib/KdTreeLib.dll</HintPath>
+ <HintPath>/Users/carlosemilianocastrotrejo/Desktop/Kill For the Wi-Fi/Assets/ProBuilder/Classes/ClassesLib/KdTreeLib.dll</HintPath>
  </Reference>
  <Reference Include="Poly2Tri">
- <HintPath>/Users/carlosemilianocastrotrejo/Desktop/Kill For the Wi-Fi/Assets/ProCore/ProBuilder/Classes/ClassesLib/Poly2Tri.dll</HintPath>
+ <HintPath>/Users/carlosemilianocastrotrejo/Desktop/Kill For the Wi-Fi/Assets/ProBuilder/Classes/ClassesLib/Poly2Tri.dll</HintPath>
  </Reference>
  <Reference Include="ProBuilderEditor-Unity5">
- <HintPath>/Users/carlosemilianocastrotrejo/Desktop/Kill For the Wi-Fi/Assets/ProCore/ProBuilder/Editor/ProBuilderEditor-Unity5.dll</HintPath>
+ <HintPath>/Users/carlosemilianocastrotrejo/Desktop/Kill For the Wi-Fi/Assets/ProBuilder/Editor/ProBuilderEditor-Unity5.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Advertisements">
  <HintPath>/Users/carlosemilianocastrotrejo/Library/Unity/cache/packages/packages.unity.com/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll</HintPath>

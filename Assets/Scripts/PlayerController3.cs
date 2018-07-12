@@ -17,10 +17,13 @@ public class PlayerController3 : NetworkBehaviour
   
 	public Camera cam;
 	public Canvas controles;
+	public AudioListener audio2;
 	public FixedJoystick MoveJoystick;
 	public FixedButton JumpButton;
 	public FixedTouchField TouchField;
 	public FixedButton ShootButton;
+
+	private int shootCounter=0;
 
 
    
@@ -28,13 +31,17 @@ public class PlayerController3 : NetworkBehaviour
 	// Update is called once per frame
 	void Update () 
 	{
+		
         if (!isLocalPlayer) 
         {
           
 			cam.enabled = false;
 			controles.enabled = false;
+			audio2.enabled = false;
 			return;
         } 
+		shootCounter++;
+		print (shootCounter);
         //Move all the Object
 		transform.Translate(MoveJoystick.inputVector.x * .4f, 0, MoveJoystick.inputVector.y * .4f);
 		transform.Rotate(0,TouchField.TouchDist.x * .08f,0);
@@ -62,9 +69,10 @@ public class PlayerController3 : NetworkBehaviour
 		}
 
         //Fire
-        if (ShootButton.Pressed)
+		if (ShootButton.Pressed && shootCounter>=7)
         {
-            CmdFire();
+			CmdFire();
+			shootCounter = 0;
         }
 
 	}
