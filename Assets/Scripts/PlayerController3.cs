@@ -6,11 +6,13 @@ using UnityStandardAssets.Characters.FirstPerson;
 
 public class PlayerController3 : NetworkBehaviour 
 {
-	
+	// Initilization of the objects 
 	public GameObject bulletPrefab;
     public GameObject RightWheel;
     public GameObject LeftWheel;
-
+	public GameObject Rifle;
+	public GameObject Crosshair;
+	public ParticleSystem muzzleflash; 
 
 
 	public Transform bulletSpawn;
@@ -24,31 +26,40 @@ public class PlayerController3 : NetworkBehaviour
 	public FixedButton ShootButton;
 
 	private int shootCounter=0;
+	private int jumpCounter=0;
+
+
 
 
    
 
 	// Update is called once per frame
-	void Update () 
+	void Update ()
 	{
 		
-        if (!isLocalPlayer) 
-        {
+		if (!isLocalPlayer) {
           
 			cam.enabled = false;
 			controles.enabled = false;
 			audio2.enabled = false;
 			return;
-        } 
-		shootCounter++;
-		print (shootCounter);
-        //Move all the Object
+		} 
+
+		shootCounter++; // Counter so the player won't shoot continously
+		jumpCounter++; // Counter so the player won't jump continously
+
+
+        // Move all the object	
 		transform.Translate(MoveJoystick.inputVector.x * .4f, 0, MoveJoystick.inputVector.y * .4f);
+		// Rotate all the object
 		transform.Rotate(0,TouchField.TouchDist.x * .08f,0);
+		Rifle.transform.Rotate (TouchField.TouchDist.y * 0.08f, 0, 0);
+		Crosshair.transform.Translate (0,-TouchField.TouchDist.y * 2.0f, 0);
 	
-        //Move the wheels in a vertical way
+        // Rotate the wheels
         if (MoveJoystick.inputVector.y == 0)
         { 
+			
         }
         else if(MoveJoystick.inputVector.y>0)
         {
@@ -63,17 +74,21 @@ public class PlayerController3 : NetworkBehaviour
 			
 
         //Jump
-		if (JumpButton.Pressed) 
+		if (JumpButton.Pressed && jumpCounter>=7) 
 		{
-			transform.Translate (0, 5 * Time.deltaTime * 3.0f, 0);
+			transform.Translate (0, 8 * Time.deltaTime * 3.0f, 0);
+			jumpCounter = 0;
 		}
 
         //Fire
 		if (ShootButton.Pressed && shootCounter>=7)
         {
+			muzzleflash.Play ();
 			CmdFire();
 			shootCounter = 0;
         }
+
+
 
 	}
 
@@ -87,17 +102,20 @@ public class PlayerController3 : NetworkBehaviour
 	[Command]
 	void CmdFire()
 	{
+		RaycastHit hit;
+
 		//Create the Bullet from the Bullet Prefab
 		var bullet=(GameObject)Instantiate(bulletPrefab,bulletSpawn.position,bulletSpawn.rotation);
 
 		//Add velocity to the bullet
-		bullet.GetComponent<Rigidbody>().velocity = bullet.transform.forward * 6;
+		bullet.GetComponent<Rigidbody>().velocity = bullet.transform.forward * 7;
 
 		// Spawn the bullet on the Clients
 		NetworkServer.Spawn(bullet);
 
 		//Destroy bullet after 2 seconds 
-		Destroy(bullet,2.0f);
+		Destroy (bullet,2.0f);
+
 
 	}
 }

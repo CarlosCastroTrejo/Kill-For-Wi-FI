@@ -17,11 +17,12 @@ public class Health : NetworkBehaviour
 
 	public RectTransform healthBar;
 
+	public Prototype.NetworkLobby.LobbyManager _scriptLobby=new Prototype.NetworkLobby.LobbyManager();
+
 
 	void Start()
 	{
 		spawnPoints = FindObjectsOfType<NetworkStartPosition>();
-
 	}
 
 
@@ -38,7 +39,9 @@ public class Health : NetworkBehaviour
 		{
 			if (destroyOnDeath) 
 			{
-				Destroy (gameObject);
+				//Destroy (gameObject);
+				//NetworkServer.Destroy (gameObject);
+				_scriptLobby.GoBackButton ();
 
 			} else 
 			{

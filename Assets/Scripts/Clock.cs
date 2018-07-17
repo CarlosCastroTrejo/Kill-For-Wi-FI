@@ -17,6 +17,7 @@ public class Clock : MonoBehaviour {
 	void Update () 
 	{
 
+
 		theTime += Time.deltaTime * speed;
 		string hours = Mathf.Floor((theTime % 216000) / 3600).ToString("00");
 		string minutes = Mathf.Floor((theTime % 3600) / 60).ToString("00");

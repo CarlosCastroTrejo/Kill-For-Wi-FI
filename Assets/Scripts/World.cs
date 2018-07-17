@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System.Diagnostics;
+using UnityEngine.Networking;
 
-public class World : MonoBehaviour {
+public class World : NetworkBehaviour {
 
 	// Use this for initialization
 	public GameObject level1;
@@ -11,7 +12,9 @@ public class World : MonoBehaviour {
 
 
 	float theTime;
-	public float speed = 1;
+	private float speed = 1;
+
+
 
 
 
@@ -31,4 +34,5 @@ public class World : MonoBehaviour {
 		}
 		
 	}
+	public void RUn(){}
 }
